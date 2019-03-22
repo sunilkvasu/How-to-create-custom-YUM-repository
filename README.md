@@ -8,3 +8,5 @@ How to create custom YUM repository
 3. Configure YUM repository
 
 4. Check repolist and install some packages
+
+NEXT DEMO: Access the newly created YUM repository from remote hosts using http 
