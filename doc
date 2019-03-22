@@ -16,6 +16,7 @@ enabled=1
 gpgcheck=0
 
 4. Check repolist and install some packages
+  yum --disablerepo="*" --enablerepo="php70_local" list available
   yum repolist
   yum install php-7
 
