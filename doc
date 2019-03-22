@@ -18,7 +18,7 @@ gpgcheck=0
 4. Check repolist and install some packages
   yum --disablerepo="*" --enablerepo="php70_local" list available
   yum repolist
-  yum install php-7
+  yum install php
 
 
 NEXT DEMO: Access the newly created YUM repository from remote hosts using http 
