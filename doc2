@@ -1,0 +1,24 @@
+yum install httpd
+
+systemctl start httpd
+
+mkdir /var/www/html/repos
+
+ln -s /opt/repos/php70 /var/www/html/repos/php70
+
+URL http://<IP>/repos/php70
+
+vim /etc/yum.repos.d/php70_remote.repo
+[php70_remote]
+name=php70_remote
+baseurl=http://<IP>/repos/php70
+enabled=1
+gpgcheck=0
+
+yum-config disable php70_local
+
+yum repolist
+
+yum --disablerepo="*" --enablerepo="php70_remote" list available
+
+yum list php
