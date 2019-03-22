@@ -2,6 +2,8 @@ yum install httpd
 
 systemctl start httpd
 
+systemctl enable httpd
+
 mkdir /var/www/html/repos
 
 ln -s /opt/repos/php70 /var/www/html/repos/php70
